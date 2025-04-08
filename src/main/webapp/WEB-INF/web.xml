@@ -1,0 +1,64 @@
+<web-app xmlns="http://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://jakarta.ee/xml/ns/jakartaee
+                             http://jakarta.ee/xml/ns/jakartaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>FormLoginServlet</servlet-name>
+        <servlet-class>controllers.FormLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FormLoginServlet</servlet-name>
+        <url-pattern>/form-login</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>controllers.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FormCreditServlet</servlet-name>
+        <servlet-class>controllers.FormCreditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FormCreditServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CreditServlet</servlet-name>
+        <servlet-class>controllers.CreditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CreditServlet</servlet-name>
+        <url-pattern>/credit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FormDepenseServlet</servlet-name>
+        <servlet-class>controllers.FormDepenseServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FormDepenseServlet</servlet-name>
+        <url-pattern>/form-depense</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DepenseServlet</servlet-name>
+        <servlet-class>controllers.DepenseServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DepenseServlet</servlet-name>
+        <url-pattern>/depense</url-pattern>
+    </servlet-mapping>
+
+</web-app>
